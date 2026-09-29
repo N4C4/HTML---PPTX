@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "html2pptx"
+version = "0.1.0"
+description = "Convierte wireframes HTML (o imágenes PNG/JPG) en presentaciones PowerPoint editables"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["python-pptx>=0.6.21"]
+keywords = ["html", "pptx", "powerpoint", "wireframe", "canva", "diagrama"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+]
+
+[project.scripts]
+html2pptx = "html2pptx.cli:main"
+html2pptx-gui = "html2pptx.gui:main"
+
+[project.urls]
+Homepage = "https://github.com/TU-USUARIO/html2pptx"
+
+[tool.setuptools]
+packages = ["html2pptx"]
+
+[tool.setuptools.package-data]
+html2pptx = ["dump.js"]
