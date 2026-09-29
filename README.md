@@ -20,7 +20,6 @@ Convierte wireframes **HTML** (o imágenes **PNG/JPG**) en presentaciones **Powe
 ## Instalación
 
 ```bash
-git clone https://github.com/TU-USUARIO/html2pptx.git
 cd html2pptx
 pip install .
 ```
